@@ -19,7 +19,17 @@
     <a-marker preset="hiro">
       <!-- Tambahkan sound component di sini -->
       <a-sound src="naruto_alive.mp3" autoplay="true" loop="true"></a-sound>
-
+      <script>
+var marker = document.querySelector('#hiro-marker');
+var sound = document.querySelector('#naruto_alive');
+marker.addEventListener('markerFound', function() {
+    sound.components.sound.playSound();
+});
+marker.addEventListener('markerLost', function() {
+    sound.components.sound.stopSound();
+});
+</script>
+      
       <a-entity 
         gltf-model="kakashi.glb"
         position="0 0.5 -1"
