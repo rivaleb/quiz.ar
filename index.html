@@ -20,16 +20,18 @@
       
       <a-entity 
         gltf-model="kakashi.glb"
-        position="2 0.5 0"
+        position="0 0.5 -2"
         scale="0.5 0.5 0.5"
-        animation-mixer="loop: repeat;"
+        rotation="0 0 0"
+        animation-mixer="clip:idle; loop: repeat; crossFadeDuration: 1"
         gesture-handler>
       </a-entity>
       <a-entity 
         gltf-model="kakashi.glb"
-        position="0 0.5 0"
+        position="0 0.5 2"
         scale="0.5 0.5 0.5"
-        animation-mixer="loop: repeat;"
+        rotation="0 360 0"
+        animation-mixer="clip:idle; loop: repeat; crossFadeDuration: 1"
         gesture-handler>
       </a-entity>
         
